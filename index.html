@@ -3,35 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS</title>
+    <title>iphone store</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-  <body class="p-10 text-gray-800">
+  </head>
+  <body class="p-5 md:p-10 text-gray-800">
     <section class="bg-purple-100 rounded-2xl p-5">
       <div class="container mx-auto">
         <div class="flex">
           <a
             class="text-3xl font-bold pr-5 mr-5 border-r border-purple-300"
             href="./index.html"
-            >Brand</a
+            >iphone 16</a
           >
           <div class="my-auto">
-            <button class="hidden"></button>
-            <ul class="flex">
-              <li><a href="">about</a></li>
-              <li><a href="">services</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">contact</a></li>
-              <li><a href="">Home</a></li>
+            <button class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+            <ul class="lg:flex font-bold text-gray-600 hidden">
+              <li class="pr-5">
+                <a
+                  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                  href=""
+                  >Home</a
+                >
+              </li>
+              <li class="pr-5">
+                <a
+                  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                  href=""
+                  > iphone 16 & Plus</a
+                >
+              </li>
+              <li class="pr-5">
+                <a
+                  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                  href=""
+                  >iphone 16 pro and pro max </a
+                >
+              </li>
+              <li class="pr-5">
+                <a
+                  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                  href=""
+                  >Contact </a
+                >
+              </li>
             </ul>
           </div>
 
           <a
             href=""
-            class="ml-auto text-medium font-bold bg-red-500 text-white px-3 py-2 rounded"
-            >Get a quote</a
+            class="ml-auto text-medium font-bold bg-red-500 text-white px-3 py-2 rounded flex"
           >
+            <span class="pr-1 hidden lg:block"> Get a quote</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m6 4.125 2.25 2.25m0 0 2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
+              />
+            </svg>
+          </a>
         </div>
+        <!-- <div>
+          <ul class="lg:hidden font-bold text-gray-600">
+            <li class="mt-1"><a class="py-2" href="">Home</a></li>
+            <li class="mt-1"><a class="py-2" href="">About</a></li>
+            <li class="mt-1"><a class="py-2" href="">Services</a></li>
+            <li class="mt-1"><a class="py-2" href="">Portfolio</a></li>
+            <li class="mt-1"><a class="py-2" href="">Contact</a></li>
+          </ul>
+        </div> -->
+
+        <section id="services" class="bg-white rounded-2xl p-10 mt-10">
+          <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-purple-100 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="font-bold text-xl text-purple-600">Service 1</h3>
+                <p class="text-gray-600 mt-3">Description of Service 1.</p>
+              </div>
+              <div class="bg-purple-100 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="font-bold text-xl text-purple-600">Service 2</h3>
+                <p class="text-gray-600 mt-3">Description of Service 2.</p>
+              </div>
+              <div class="bg-purple-100 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="font-bold text-xl text-purple-600">Service 3</h3>
+                <p class="text-gray-600 mt-3">Description of Service 3.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="bg-gray-100 rounded-2xl p-10 mt-10">
+          <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="portfolio1.jpg" alt="Portfolio 1" class="rounded-md mb-3">
+                <h3 class="font-bold text-lg text-purple-600">Project 1</h3>
+                <p class="text-gray-600 mt-2">Description of Project 1.</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="portfolio2.jpg" alt="Portfolio 2" class="rounded-md mb-3">
+                <h3 class="font-bold text-lg text-purple-600">Project 2</h3>
+                <p class="text-gray-600 mt-2">Description of Project 2.</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="portfolio3.jpg" alt="Portfolio 3" class="rounded-md mb-3">
+                <h3 class="font-bold text-lg text-purple-600">Project 3</h3>
+                <p class="text-gray-600 mt-2">Description of Project 3.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" class="bg-purple-50 rounded-2xl p-10 mt-10">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-600">"Amazing service! Highly recommend."</p>
+                <h4 class="font-bold text-lg mt-4 text-purple-600">- Client 1</h4>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-600">"Professional and efficient."</p>
+                <h4 class="font-bold text-lg mt-4 text-purple-600">- Client 2</h4>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-600">"Great work, will work with them again."</p>
+                <h4 class="font-bold text-lg mt-4 text-purple-600">- Client 3</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer id="footer" class="bg-gray-800 text-gray-100 p-10 mt-10">
+          <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+              <h4 class="font-bold text-lg mb-3">Brand</h4>
+              <p class="text-gray-400">Providing quality services and projects for all your business needs.</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+              <h4 class="font-bold text-lg mb-3">Quick Links</h4>
+              <ul>
+                <li><a href="#" class="hover:text-purple-300">Home</a></li>
+                <li><a href="#services" class="hover:text-purple-300">Services</a></li>
+                <li><a href="#portfolio" class="hover:text-purple-300">Portfolio</a></li>
+                <li><a href="#testimonials" class="hover:text-purple-300">Testimonials</a></li>
+              </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+              <h4 class="font-bold text-lg mb-3">Contact Us</h4>
+              <p>Email: info@brand.com</p>
+              <p>Phone: +123 456 7890</p>
+            </div>
+            
+            <!-- Social Links -->
+            <div>
+              <h4 class="font-bold text-lg mb-3">Follow Us</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="hover:text-purple-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M18.75 6.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-purple-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7.5 10.5a7.5 7.5 0 0 1 15 0v5.25m-1.5-1.125v.75a2.25 2.25 0 0 1-2.25 2.25H6.75a2.25 2.25 0 0 1-2.25-2.25v-.75M15.75 9.75h1.125"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-purple-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 3.75a1.5 1.5 0 0 0-3 0v3m9 6.75h-3v3a9 9 0 1 1-18 0v-3H2.25a.75.75 0 0 0 0 1.5H21.75a.75.75 0 0 0 0-1.5Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Footer Bottom -->  
+          <div class="text-center text-gray-400 mt-10">
+    <p>&copy; 2024 Brand. All rights reserved.</p>
+  </div>
+</footer>
+
+       
       </div>
     </section>
   </body>
